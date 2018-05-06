@@ -16,6 +16,7 @@ public class testFrame extends javax.swing.JFrame {
      */
     public testFrame() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
