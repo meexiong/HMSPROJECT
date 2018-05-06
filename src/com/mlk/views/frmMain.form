@@ -90,9 +90,6 @@
                     </Component>
                     <Component class="com.xzq.osc.JocHyperlink" name="jocHyperlink2">
                       <Properties>
-                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/com/mlk/icons/patient.png"/>
-                        </Property>
                         <Property name="text" type="java.lang.String" value="&#xec0;&#xe9e;&#xeb5;&#xec8;&#xea1;&#xe9c;&#xeb9;&#xec9;&#xec0;&#xe88;&#xeb1;&#xe9a;"/>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Saysettha OT" size="12" style="0"/>
