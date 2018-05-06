@@ -59,11 +59,13 @@ public class frmMain extends javax.swing.JFrame {
         jTaskPaneGroup1.setTitle("ການລົງທະບຽນ");
         jTaskPaneGroup1.setFont(new java.awt.Font("Saysettha OT", 1, 12)); // NOI18N
 
+        jocHyperlink1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/patient_history.png"))); // NOI18N
         jocHyperlink1.setText("ລົງທະບຽນຜູ້ເຈັບ");
         jocHyperlink1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup1.getContentPane().add(jocHyperlink1);
 
+        jocHyperlink2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/patient.png"))); // NOI18N
         jocHyperlink2.setText("ເພີ່ມຜູ້ເຈັບ");
         jocHyperlink2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -74,6 +76,7 @@ public class frmMain extends javax.swing.JFrame {
         });
         jTaskPaneGroup1.getContentPane().add(jocHyperlink2);
 
+        jocHyperlink4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/report-icon-blue_247217.png"))); // NOI18N
         jocHyperlink4.setText("ລາຍງານການລົງທະບຽນ");
         jocHyperlink4.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);

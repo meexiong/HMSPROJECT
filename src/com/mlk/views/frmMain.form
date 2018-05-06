@@ -81,6 +81,9 @@
                   <SubComponents>
                     <Component class="com.xzq.osc.JocHyperlink" name="jocHyperlink1">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/com/mlk/icons/patient_history.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="&#xea5;&#xebb;&#xe87;&#xe97;&#xeb0;&#xe9a;&#xebd;&#xe99;&#xe9c;&#xeb9;&#xec9;&#xec0;&#xe88;&#xeb1;&#xe9a;"/>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Saysettha OT" size="12" style="0"/>
@@ -90,6 +93,9 @@
                     </Component>
                     <Component class="com.xzq.osc.JocHyperlink" name="jocHyperlink2">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/com/mlk/icons/patient.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="&#xec0;&#xe9e;&#xeb5;&#xec8;&#xea1;&#xe9c;&#xeb9;&#xec9;&#xec0;&#xe88;&#xeb1;&#xe9a;"/>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Saysettha OT" size="12" style="0"/>
@@ -102,6 +108,9 @@
                     </Component>
                     <Component class="com.xzq.osc.JocHyperlink" name="jocHyperlink4">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/com/mlk/icons/report-icon-blue_247217.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="&#xea5;&#xeb2;&#xe8d;&#xe87;&#xeb2;&#xe99;&#xe81;&#xeb2;&#xe99;&#xea5;&#xebb;&#xe87;&#xe97;&#xeb0;&#xe9a;&#xebd;&#xe99;"/>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Saysettha OT" size="12" style="0"/>
