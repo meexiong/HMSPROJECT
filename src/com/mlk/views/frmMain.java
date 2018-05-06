@@ -64,6 +64,7 @@ public class frmMain extends javax.swing.JFrame {
         jocHyperlink1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup1.getContentPane().add(jocHyperlink1);
 
+        jocHyperlink2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/patient.png"))); // NOI18N
         jocHyperlink2.setText("ເພີ່ມຜູ້ເຈັບ");
         jocHyperlink2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -215,7 +216,7 @@ public class frmMain extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 511, Short.MAX_VALUE)
+            .addGap(0, 530, Short.MAX_VALUE)
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
