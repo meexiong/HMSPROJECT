@@ -87,7 +87,7 @@ public class frmMain extends javax.swing.JFrame {
         jTaskPaneGroup5.setTitle("ຂະແໜງ");
         jTaskPaneGroup5.setFont(new java.awt.Font("Saysettha OT", 1, 12)); // NOI18N
 
-        jocHyperlink15.setText("ພາຍໃນ");
+        jocHyperlink15.setText("ພາຍໃນkkk");
         jocHyperlink15.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink15.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup5.getContentPane().add(jocHyperlink15);
