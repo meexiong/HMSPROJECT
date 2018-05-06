@@ -59,7 +59,7 @@ public class frmMain extends javax.swing.JFrame {
         jTaskPaneGroup1.setTitle("ການລົງທະບຽນ");
         jTaskPaneGroup1.setFont(new java.awt.Font("Saysettha OT", 1, 12)); // NOI18N
 
-        jocHyperlink1.setText("ລົງທະບຽນຜູ້ເຈັບ");
+        jocHyperlink1.setText("ລົງທະບຽນຜູ້ເຈັບaaa");
         jocHyperlink1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup1.getContentPane().add(jocHyperlink1);
