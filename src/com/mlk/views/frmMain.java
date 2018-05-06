@@ -84,7 +84,6 @@ public class frmMain extends javax.swing.JFrame {
 
         jTaskPane1.add(jTaskPaneGroup1);
 
-        jTaskPaneGroup5.setExpanded(false);
         jTaskPaneGroup5.setTitle("ຂະແໜງ");
         jTaskPaneGroup5.setFont(new java.awt.Font("Saysettha OT", 1, 12)); // NOI18N
 
@@ -114,6 +113,7 @@ public class frmMain extends javax.swing.JFrame {
 
         jTaskPane1.add(jTaskPaneGroup5);
 
+        jTaskPaneGroup3.setExpanded(false);
         jTaskPaneGroup3.setTitle("ຫ້ອງ Lab & ຜ່າຕັດ");
         jTaskPaneGroup3.setFont(new java.awt.Font("Saysettha OT", 1, 12)); // NOI18N
 
@@ -123,16 +123,19 @@ public class frmMain extends javax.swing.JFrame {
         jocHyperlink8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup3.getContentPane().add(jocHyperlink8);
 
+        jocHyperlink9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/icon_imaging_tests.png"))); // NOI18N
         jocHyperlink9.setText("ຫ້ອງເອໂກ");
         jocHyperlink9.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup3.getContentPane().add(jocHyperlink9);
 
+        jocHyperlink10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/Icon2-1.png"))); // NOI18N
         jocHyperlink10.setText("ຫ້ອງວິເຄາະ");
         jocHyperlink10.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink10.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup3.getContentPane().add(jocHyperlink10);
 
+        jocHyperlink23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/mfch - surgery.png"))); // NOI18N
         jocHyperlink23.setText("ຫ້ອງຜ່າຕັດ");
         jocHyperlink23.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink23.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -144,11 +147,13 @@ public class frmMain extends javax.swing.JFrame {
         jTaskPaneGroup4.setTitle("ການຢາ & ການເງິນ");
         jTaskPaneGroup4.setFont(new java.awt.Font("Saysettha OT", 1, 12)); // NOI18N
 
+        jocHyperlink11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/Pills-blue-icon.png"))); // NOI18N
         jocHyperlink11.setText("ລາຍການໃບສັ່ງຢາ");
         jocHyperlink11.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink11.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup4.getContentPane().add(jocHyperlink11);
 
+        jocHyperlink12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/23_xbolt-save-time-money-icon.png"))); // NOI18N
         jocHyperlink12.setText("ຈ່າຍຄ່າຢາ");
         jocHyperlink12.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink12.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -160,11 +165,13 @@ public class frmMain extends javax.swing.JFrame {
         jTaskPaneGroup2.setTitle("ຂໍ້ມູນທ່ານໝໍ");
         jTaskPaneGroup2.setFont(new java.awt.Font("Saysettha OT", 1, 12)); // NOI18N
 
+        jocHyperlink5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/doctor.png"))); // NOI18N
         jocHyperlink5.setText("ເພີ່ມທ່ານໝໍ");
         jocHyperlink5.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup2.getContentPane().add(jocHyperlink5);
 
+        jocHyperlink6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/p-1000x750.png"))); // NOI18N
         jocHyperlink6.setText("ຕຳແໜ່ງ");
         jocHyperlink6.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -176,26 +183,31 @@ public class frmMain extends javax.swing.JFrame {
         jTaskPaneGroup6.setTitle("ຕັ້ງຄ່າລະບົບ");
         jTaskPaneGroup6.setFont(new java.awt.Font("Saysettha OT", 1, 12)); // NOI18N
 
+        jocHyperlink21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/Hospital-blue-icon.png"))); // NOI18N
         jocHyperlink21.setText("ຂໍມູນໂຮງໝໍ");
         jocHyperlink21.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink21.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup6.getContentPane().add(jocHyperlink21);
 
+        jocHyperlink24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/425_-_Door-512.png"))); // NOI18N
         jocHyperlink24.setText("ຫ້ອງນອນ");
         jocHyperlink24.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink24.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup6.getContentPane().add(jocHyperlink24);
 
+        jocHyperlink22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/Icon_inpatient.png"))); // NOI18N
         jocHyperlink22.setText("ຂໍ້ມຕຽງນອນ");
         jocHyperlink22.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink22.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup6.getContentPane().add(jocHyperlink22);
 
+        jocHyperlink20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/regional-integration.png"))); // NOI18N
         jocHyperlink20.setText("ແຂວງ");
         jocHyperlink20.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink20.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup6.getContentPane().add(jocHyperlink20);
 
+        jocHyperlink19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/regional-integration.png"))); // NOI18N
         jocHyperlink19.setText("ເມືອງ");
         jocHyperlink19.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink19.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -219,11 +231,11 @@ public class frmMain extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 659, Short.MAX_VALUE)
+            .addGap(0, 783, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 530, Short.MAX_VALUE)
+            .addGap(0, 566, Short.MAX_VALUE)
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
