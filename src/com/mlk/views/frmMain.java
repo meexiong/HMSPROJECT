@@ -84,24 +84,29 @@ public class frmMain extends javax.swing.JFrame {
 
         jTaskPane1.add(jTaskPaneGroup1);
 
+        jTaskPaneGroup5.setExpanded(false);
         jTaskPaneGroup5.setTitle("ຂະແໜງ");
         jTaskPaneGroup5.setFont(new java.awt.Font("Saysettha OT", 1, 12)); // NOI18N
 
-        jocHyperlink15.setText("ພາຍໃນkkk");
+        jocHyperlink15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/department-filled.png"))); // NOI18N
+        jocHyperlink15.setText("ພາຍໃນ");
         jocHyperlink15.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink15.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup5.getContentPane().add(jocHyperlink15);
 
+        jocHyperlink16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/department-filled.png"))); // NOI18N
         jocHyperlink16.setText("ພະນອກ");
         jocHyperlink16.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink16.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup5.getContentPane().add(jocHyperlink16);
 
+        jocHyperlink17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/Emc.png"))); // NOI18N
         jocHyperlink17.setText("ສຸກເສີນ");
         jocHyperlink17.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink17.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup5.getContentPane().add(jocHyperlink17);
 
+        jocHyperlink18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/EastTNChildrensHospitalLogo.png"))); // NOI18N
         jocHyperlink18.setText("ເດັກນ້ອຍ");
         jocHyperlink18.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink18.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -109,10 +114,10 @@ public class frmMain extends javax.swing.JFrame {
 
         jTaskPane1.add(jTaskPaneGroup5);
 
-        jTaskPaneGroup3.setExpanded(false);
         jTaskPaneGroup3.setTitle("ຫ້ອງ Lab & ຜ່າຕັດ");
         jTaskPaneGroup3.setFont(new java.awt.Font("Saysettha OT", 1, 12)); // NOI18N
 
+        jocHyperlink8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/Medical-19-512.png"))); // NOI18N
         jocHyperlink8.setText("ຫ້ອງ X-Ray");
         jocHyperlink8.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jocHyperlink8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
