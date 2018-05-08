@@ -16,7 +16,7 @@ public class frmPatientList extends javax.swing.JInternalFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        btnNew = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
@@ -31,8 +31,13 @@ public class frmPatientList extends javax.swing.JInternalFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jButton1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton1.setText("ເພີ່ມຄົນເຈັບໃໝ່");
+        btnNew.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btnNew.setText("ເພີ່ມຄົນເຈັບໃໝ່");
+        btnNew.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNewActionPerformed(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jButton2.setText("ໂຫຼດຂໍ້ມູນມາໃໝ່");
@@ -47,7 +52,7 @@ public class frmPatientList extends javax.swing.JInternalFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jButton1)
+                .addComponent(btnNew)
                 .addGap(0, 0, 0)
                 .addComponent(jButton2)
                 .addGap(89, 89, 89)
@@ -58,7 +63,7 @@ public class frmPatientList extends javax.swing.JInternalFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton1)
+            .addComponent(btnNew)
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                 .addComponent(jButton2)
                 .addComponent(jLabel1)
@@ -147,9 +152,14 @@ public class frmPatientList extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewActionPerformed
+        frmNewPatient newPatientObject = new frmNewPatient(null, closable);
+        newPatientObject.setVisible(true);
+    }//GEN-LAST:event_btnNewActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnNew;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
