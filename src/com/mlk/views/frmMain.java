@@ -15,8 +15,8 @@ public class frmMain extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jocPaneGroup1 = new com.xzq.osc.JocPaneGroup();
         jPanel1 = new javax.swing.JPanel();
+        jocGroupPane1 = new com.xzq.osc.JocGroupPane();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTaskPane1 = new com.l2fprod.common.swing.JTaskPane();
         jTaskPaneGroup1 = new com.l2fprod.common.swing.JTaskPaneGroup();
@@ -45,7 +45,6 @@ public class frmMain extends javax.swing.JFrame {
         jocHyperlink22 = new com.xzq.osc.JocHyperlink();
         jocHyperlink20 = new com.xzq.osc.JocHyperlink();
         jocHyperlink19 = new com.xzq.osc.JocHyperlink();
-        jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -55,6 +54,10 @@ public class frmMain extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 153, 255), 3));
         jPanel1.setLayout(new java.awt.BorderLayout());
+
+        jocGroupPane1.setExpansionDirection(com.xzq.osc.JocGroupPane.ExpansionDirection.LEFT_TO_RIGHT);
+        jocGroupPane1.setText("");
+        jocGroupPane1.setLayout(new java.awt.BorderLayout());
 
         jTaskPaneGroup1.setTitle("ການລົງທະບຽນ");
         jTaskPaneGroup1.setFont(new java.awt.Font("Saysettha OT", 1, 12)); // NOI18N
@@ -217,11 +220,9 @@ public class frmMain extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(jTaskPane1);
 
-        jPanel1.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+        jocGroupPane1.add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
-        jLabel1.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jLabel1.setText("------------------------------------");
-        jPanel1.add(jLabel1, java.awt.BorderLayout.PAGE_START);
+        jPanel1.add(jocGroupPane1, java.awt.BorderLayout.CENTER);
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.LINE_START);
 
@@ -231,11 +232,11 @@ public class frmMain extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 783, Short.MAX_VALUE)
+            .addGap(0, 791, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 566, Short.MAX_VALUE)
+            .addGap(0, 594, Short.MAX_VALUE)
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
@@ -291,7 +292,6 @@ public class frmMain extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
@@ -304,6 +304,7 @@ public class frmMain extends javax.swing.JFrame {
     private com.l2fprod.common.swing.JTaskPaneGroup jTaskPaneGroup4;
     private com.l2fprod.common.swing.JTaskPaneGroup jTaskPaneGroup5;
     private com.l2fprod.common.swing.JTaskPaneGroup jTaskPaneGroup6;
+    private com.xzq.osc.JocGroupPane jocGroupPane1;
     private com.xzq.osc.JocHyperlink jocHyperlink1;
     private com.xzq.osc.JocHyperlink jocHyperlink10;
     private com.xzq.osc.JocHyperlink jocHyperlink11;
@@ -324,6 +325,5 @@ public class frmMain extends javax.swing.JFrame {
     private com.xzq.osc.JocHyperlink jocHyperlink6;
     private com.xzq.osc.JocHyperlink jocHyperlink8;
     private com.xzq.osc.JocHyperlink jocHyperlink9;
-    private com.xzq.osc.JocPaneGroup jocPaneGroup1;
     // End of variables declaration//GEN-END:variables
 }
