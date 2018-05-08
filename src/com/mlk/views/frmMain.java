@@ -1,6 +1,7 @@
 
 package com.mlk.views;
 
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
@@ -12,6 +13,7 @@ public class frmMain extends javax.swing.JFrame {
         initComponents();
         this.setExtendedState(JFrame.MAXIMIZED_BOTH); 
         this.setVisible(true);
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/com/mlk/images/Logo.png"))); 
     }
 
     @SuppressWarnings("unchecked")
