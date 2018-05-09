@@ -13,37 +13,45 @@ import java.util.Date;
 
 public class DatabaseManager {
 
-    String db_connect_string = "jdbc:sqlserver:PXN-ESD213-002-;databaseName=hmsdb;selectMethod=cursor";
-    String db_userid = "root";
+    String db_connect_string = "jdbc:sqlserver://PXN-ESD213-002-\\sqlexpress";
+    String db_userid = "sa";
     String db_password = "Leelar@2017";
     Connection conn = null;
 
     public DatabaseManager() {
     }
 
-    public String getPassword(String domain, String username) throws SQLException, ClassNotFoundException {
-        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        conn = DriverManager.getConnection(db_connect_string, db_userid, db_password);
-        String pw = null;
-        Statement statement = conn.createStatement();
-        String queryString = "select * from " + domain + " where username = '" + username + "';";
-        ResultSet rs = statement.executeQuery(queryString);
-        while (rs.next()) {
-            pw = rs.getString(3).replaceAll(" ", "");
-        }
-        return pw;
-    }
+//    public String getPassword(String domain, String username) throws SQLException, ClassNotFoundException {
+//        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+//        conn = DriverManager.getConnection(db_connect_string, db_userid, db_password);
+//        String pw = null;
+//        Statement statement = conn.createStatement();
+//        String queryString = "select * from " + domain + " where username = '" + username + "';";
+//        ResultSet rs = statement.executeQuery(queryString);
+//        while (rs.next()) {
+//            pw = rs.getString(3).replaceAll(" ", "");
+//        }
+//        return pw;
+//    }
 
     public void insert(Object obj) throws ClassNotFoundException, SQLException {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        conn = DriverManager.getConnection(db_connect_string, db_userid, db_password);
+        conn = DriverManager.getConnection(db_connect_string,db_userid,db_password);
+        if (conn!= null){
+            System.out.println("Succesfull!");
+        }
+        else{
+            System.out.println("Failed");
+        }
+                
         Statement statement = conn.createStatement();
-
         if (obj instanceof Patient) {
             Patient patient = (Patient) obj;
-            String queryString = "insert into Patient (code, name, surname, gender, DOB, telephone, ) "
-                    + "VALUES('" + patient.getCode() + "','" + patient.getName() + "','" + patient.getSurname() + "','" + patient.getGender() + "','" + patient.getDOB() + "',"
-                    + "'" + patient.getTelephone() + "','" + patient.getNumber() + "','" + patient.getOccupation() + "','" + patient.getNationality() + "',"
+            String queryString = "insert into Patient (code, name, surname, gender, DOB, telephone,number,occupation, nationality, province, district,village ) "
+                    + "VALUES('" + patient.getCode() + "','" + patient.getName() + "','" + patient.getSurname() + "',"
+                    + "'" + patient.getGender() + "','" + patient.getDOB() + "',"
+                    + "'" + patient.getTelephone() + "','" + patient.getNumber() + "','" + patient.getOccupation() + "',"
+                    + "'" + patient.getNationality() + "',"
                     + "'" + patient.getProvince() + "','" + patient.getDistrict() + "','" + patient.getVillage() + "');";
             statement.executeQuery(queryString);
         }

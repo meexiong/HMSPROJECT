@@ -369,11 +369,11 @@ public class frmNewPatient extends javax.swing.JDialog {
         if (this.radFemale.isSelected()){
             pa.setGender("Female");
         }
-        try {
-            pa.setDOB(new SimpleDateFormat("yyyy/MM/dd").parse(this.datePKDOB.toString()));
-        } catch (ParseException ex) {
-            Logger.getLogger(frmNewPatient.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        try {
+//            pa.setDOB(new SimpleDateFormat("yyyy/MM/dd").parse(this.datePKDOB.toString()));
+//        } catch (ParseException ex) {
+//            Logger.getLogger(frmNewPatient.class.getName()).log(Level.SEVERE, null, ex);
+//        }
         pa.setTelephone(this.txtTel.getText());
         pa.setNumber(this.txtNumber.getText());
         pa.setNationality(this.cmbNationality.getSelectedItem().toString());
@@ -390,6 +390,8 @@ public class frmNewPatient extends javax.swing.JDialog {
         } catch (SQLException ex) {
             Logger.getLogger(frmNewPatient.class.getName()).log(Level.SEVERE, null, ex);
         }
+        this.setVisible(false);
+        this.dispose();
     }//GEN-LAST:event_btnSaveActionPerformed
 
     /**
