@@ -2,7 +2,9 @@
 package com.mlk.views;
 
 import java.awt.Toolkit;
+import java.beans.PropertyVetoException;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 import javax.swing.UIManager;
@@ -270,6 +272,11 @@ public class frmMain extends javax.swing.JFrame {
         frmPatientList patientObject = new frmPatientList();
         DeskTopControl.add(patientObject);
         patientObject.setVisible(true);
+        try {
+          patientObject.setMaximum(true);
+        } catch (PropertyVetoException e) {
+            JOptionPane.showConfirmDialog(null,"Can not be maximized!");
+        }
     }//GEN-LAST:event_btnSMPatientListActionPerformed
 
     private void jocHyperlink1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jocHyperlink1ActionPerformed
