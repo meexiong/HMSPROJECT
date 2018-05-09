@@ -32,7 +32,6 @@ public class Patient {
     
     //constructor
     public Patient(){
-        
     }
     public Patient(String code, String name, String surname, String gender, Date dob, String telephone, String number, String occupation, String nationality, String province, String district, String village){
         this.code = code;

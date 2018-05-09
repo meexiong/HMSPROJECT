@@ -3,6 +3,7 @@ package com.mlk.controllers;
 import com.mlk.models.Patient;
 import java.sql.DriverManager;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -13,7 +14,7 @@ import java.util.Date;
 
 public class DatabaseManager {
 
-    String db_connect_string = "jdbc:sqlserver://PXN-ESD213-002-\\sqlexpress";
+    String db_connect_string = "jdbc:sqlserver://PXN-ESD213-002-:1433;databaseName=hmsdb;selectMethod=cursor";
     String db_userid = "sa";
     String db_password = "Leelar@2017";
     Connection conn = null;
@@ -33,27 +34,22 @@ public class DatabaseManager {
 //        }
 //        return pw;
 //    }
-
-    public void insert(Object obj) throws ClassNotFoundException, SQLException {
+    public void insert(Patient pa) throws ClassNotFoundException, SQLException {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        conn = DriverManager.getConnection(db_connect_string,db_userid,db_password);
-        if (conn!= null){
+        conn = DriverManager.getConnection(db_connect_string, db_userid, db_password);
+        if (conn != null) {
             System.out.println("Succesfull!");
-        }
-        else{
+            String queryString = "INSERT INTO Patient (code, name, surname, gender) "
+                    + "VALUES(?,?, ?,?)";
+            PreparedStatement preparedStmt = conn.prepareStatement(queryString);
+            preparedStmt.setString(1, pa.getCode());
+            preparedStmt.setString(2, pa.getName());
+            preparedStmt.setString(3, pa.getSurname());
+            preparedStmt.setString(4, pa.getGender());
+            preparedStmt.execute();
+            conn.close();
+        } else {
             System.out.println("Failed");
-        }
-                
-        Statement statement = conn.createStatement();
-        if (obj instanceof Patient) {
-            Patient patient = (Patient) obj;
-            String queryString = "insert into Patient (code, name, surname, gender, DOB, telephone,number,occupation, nationality, province, district,village ) "
-                    + "VALUES('" + patient.getCode() + "','" + patient.getName() + "','" + patient.getSurname() + "',"
-                    + "'" + patient.getGender() + "','" + patient.getDOB() + "',"
-                    + "'" + patient.getTelephone() + "','" + patient.getNumber() + "','" + patient.getOccupation() + "',"
-                    + "'" + patient.getNationality() + "',"
-                    + "'" + patient.getProvince() + "','" + patient.getDistrict() + "','" + patient.getVillage() + "');";
-            statement.executeQuery(queryString);
         }
     }
 

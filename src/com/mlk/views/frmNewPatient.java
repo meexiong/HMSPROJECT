@@ -364,23 +364,23 @@ public class frmNewPatient extends javax.swing.JDialog {
         pa.setName(this.txtName.getText());
         pa.setSurname(this.txtSurname.getText());
         if (this.radMale.isSelected()){
-            pa.setGender("Male");
+            pa.setGender("M");
         }
         if (this.radFemale.isSelected()){
-            pa.setGender("Female");
+            pa.setGender("F");
         }
 //        try {
 //            pa.setDOB(new SimpleDateFormat("yyyy/MM/dd").parse(this.datePKDOB.toString()));
 //        } catch (ParseException ex) {
 //            Logger.getLogger(frmNewPatient.class.getName()).log(Level.SEVERE, null, ex);
 //        }
-        pa.setTelephone(this.txtTel.getText());
-        pa.setNumber(this.txtNumber.getText());
-        pa.setNationality(this.cmbNationality.getSelectedItem().toString());
-        pa.setOccupation(this.cmbOccupation.getSelectedItem().toString());
-        pa.setVillage(this.txtVillage.getText());
-        pa.setDistrict(this.cmbDistrict.getSelectedItem().toString());
-        pa.setProvince(this.cmbProvince.getSelectedItem().toString());
+//        pa.setTelephone(this.txtTel.getText());
+//        pa.setNumber(this.txtNumber.getText());
+//        pa.setNationality(this.cmbNationality.getSelectedItem().toString());
+//        pa.setOccupation(this.cmbOccupation.getSelectedItem().toString());
+//        pa.setVillage(this.txtVillage.getText());
+//        pa.setDistrict(this.cmbDistrict.getSelectedItem().toString());
+//        pa.setProvince(this.cmbProvince.getSelectedItem().toString());
         //instanciate Databasemanager to help patient
         DatabaseManager dbmanager = new DatabaseManager();
         try {
