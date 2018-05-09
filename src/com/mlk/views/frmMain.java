@@ -30,9 +30,9 @@ public class frmMain extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTaskPane1 = new com.l2fprod.common.swing.JTaskPane();
         jTaskPaneGroup1 = new com.l2fprod.common.swing.JTaskPaneGroup();
-        jocHyperlink1 = new com.xzq.osc.JocHyperlink();
+        btnSMRegister = new com.xzq.osc.JocHyperlink();
         btnSMPatientList = new com.xzq.osc.JocHyperlink();
-        jocHyperlink4 = new com.xzq.osc.JocHyperlink();
+        btnSMRtpPatient = new com.xzq.osc.JocHyperlink();
         jTaskPaneGroup5 = new com.l2fprod.common.swing.JTaskPaneGroup();
         jocHyperlink15 = new com.xzq.osc.JocHyperlink();
         jocHyperlink16 = new com.xzq.osc.JocHyperlink();
@@ -81,16 +81,16 @@ public class frmMain extends javax.swing.JFrame {
         jTaskPaneGroup1.setTitle("ການລົງທະບຽນ");
         jTaskPaneGroup1.setFont(new java.awt.Font("Saysettha OT", 1, 14)); // NOI18N
 
-        jocHyperlink1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/patient_history.png"))); // NOI18N
-        jocHyperlink1.setText("ລົງທະບຽນຜູ້ເຈັບ");
-        jocHyperlink1.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jocHyperlink1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jocHyperlink1.addActionListener(new java.awt.event.ActionListener() {
+        btnSMRegister.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/patient_history.png"))); // NOI18N
+        btnSMRegister.setText("ລົງທະບຽນຜູ້ເຈັບ");
+        btnSMRegister.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
+        btnSMRegister.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnSMRegister.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jocHyperlink1ActionPerformed(evt);
+                btnSMRegisterActionPerformed(evt);
             }
         });
-        jTaskPaneGroup1.getContentPane().add(jocHyperlink1);
+        jTaskPaneGroup1.getContentPane().add(btnSMRegister);
 
         btnSMPatientList.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/patient.png"))); // NOI18N
         btnSMPatientList.setText("ເພີ່ມຜູ້ເຈັບ");
@@ -103,11 +103,11 @@ public class frmMain extends javax.swing.JFrame {
         });
         jTaskPaneGroup1.getContentPane().add(btnSMPatientList);
 
-        jocHyperlink4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/report-icon-blue_247217.png"))); // NOI18N
-        jocHyperlink4.setText("ລາຍງານການລົງທະບຽນ");
-        jocHyperlink4.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jocHyperlink4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jTaskPaneGroup1.getContentPane().add(jocHyperlink4);
+        btnSMRtpPatient.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/report-icon-blue_247217.png"))); // NOI18N
+        btnSMRtpPatient.setText("ລາຍງານການລົງທະບຽນ");
+        btnSMRtpPatient.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
+        btnSMRtpPatient.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jTaskPaneGroup1.getContentPane().add(btnSMRtpPatient);
 
         jTaskPane1.add(jTaskPaneGroup1);
 
@@ -298,9 +298,9 @@ public class frmMain extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnSMPatientListActionPerformed
 
-    private void jocHyperlink1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jocHyperlink1ActionPerformed
+    private void btnSMRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSMRegisterActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jocHyperlink1ActionPerformed
+    }//GEN-LAST:event_btnSMRegisterActionPerformed
 
     /**
      * @param args the command line arguments
@@ -343,6 +343,8 @@ public class frmMain extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane DeskTopControl;
     private com.xzq.osc.JocHyperlink btnSMPatientList;
+    private com.xzq.osc.JocHyperlink btnSMRegister;
+    private com.xzq.osc.JocHyperlink btnSMRtpPatient;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
@@ -356,7 +358,6 @@ public class frmMain extends javax.swing.JFrame {
     private com.l2fprod.common.swing.JTaskPaneGroup jTaskPaneGroup5;
     private com.l2fprod.common.swing.JTaskPaneGroup jTaskPaneGroup6;
     private com.xzq.osc.JocGroupPane jocGroupPane1;
-    private com.xzq.osc.JocHyperlink jocHyperlink1;
     private com.xzq.osc.JocHyperlink jocHyperlink10;
     private com.xzq.osc.JocHyperlink jocHyperlink11;
     private com.xzq.osc.JocHyperlink jocHyperlink12;
@@ -371,7 +372,6 @@ public class frmMain extends javax.swing.JFrame {
     private com.xzq.osc.JocHyperlink jocHyperlink23;
     private com.xzq.osc.JocHyperlink jocHyperlink24;
     private com.xzq.osc.JocHyperlink jocHyperlink25;
-    private com.xzq.osc.JocHyperlink jocHyperlink4;
     private com.xzq.osc.JocHyperlink jocHyperlink5;
     private com.xzq.osc.JocHyperlink jocHyperlink6;
     private com.xzq.osc.JocHyperlink jocHyperlink8;

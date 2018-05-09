@@ -92,7 +92,7 @@
                         </Property>
                       </Properties>
                       <SubComponents>
-                        <Component class="com.xzq.osc.JocHyperlink" name="jocHyperlink1">
+                        <Component class="com.xzq.osc.JocHyperlink" name="btnSMRegister">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                               <Image iconType="3" name="/com/mlk/icons/patient_history.png"/>
@@ -104,7 +104,7 @@
                             <Property name="horizontalAlignment" type="int" value="2"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jocHyperlink1ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSMRegisterActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="com.xzq.osc.JocHyperlink" name="btnSMPatientList">
@@ -122,7 +122,7 @@
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSMPatientListActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="com.xzq.osc.JocHyperlink" name="jocHyperlink4">
+                        <Component class="com.xzq.osc.JocHyperlink" name="btnSMRtpPatient">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                               <Image iconType="3" name="/com/mlk/icons/report-icon-blue_247217.png"/>
@@ -204,11 +204,11 @@
                             <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
                           </StatementProvider>
                           <Parameters>
-                            <CodeExpression id="6_jocHyperlink1">
-                              <CodeVariable name="jocHyperlink1" type="8194" declaredType="com.xzq.osc.JocHyperlink"/>
+                            <CodeExpression id="6_btnSMRegister">
+                              <CodeVariable name="btnSMRegister" type="8194" declaredType="com.xzq.osc.JocHyperlink"/>
                               <ExpressionOrigin>
                                 <ExpressionProvider type="ComponentRef">
-                                  <ComponentRef name="jocHyperlink1"/>
+                                  <ComponentRef name="btnSMRegister"/>
                                 </ExpressionProvider>
                               </ExpressionOrigin>
                             </CodeExpression>
@@ -236,11 +236,11 @@
                             <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
                           </StatementProvider>
                           <Parameters>
-                            <CodeExpression id="8_jocHyperlink4">
-                              <CodeVariable name="jocHyperlink4" type="8194" declaredType="com.xzq.osc.JocHyperlink"/>
+                            <CodeExpression id="8_btnSMRtpPatient">
+                              <CodeVariable name="btnSMRtpPatient" type="8194" declaredType="com.xzq.osc.JocHyperlink"/>
                               <ExpressionOrigin>
                                 <ExpressionProvider type="ComponentRef">
-                                  <ComponentRef name="jocHyperlink4"/>
+                                  <ComponentRef name="btnSMRtpPatient"/>
                                 </ExpressionProvider>
                               </ExpressionOrigin>
                             </CodeExpression>
