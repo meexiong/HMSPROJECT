@@ -19,9 +19,7 @@ import java.util.logging.Logger;
  */
 public class frmNewPatient extends javax.swing.JDialog {
 
-    /**
-     * Creates new form frmNewPatients
-     */
+    private DatabaseManager dbm = new DatabaseManager();
     public frmNewPatient(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
@@ -381,10 +379,8 @@ public class frmNewPatient extends javax.swing.JDialog {
 //        pa.setVillage(this.txtVillage.getText());
 //        pa.setDistrict(this.cmbDistrict.getSelectedItem().toString());
 //        pa.setProvince(this.cmbProvince.getSelectedItem().toString());
-        //instanciate Databasemanager to help patient
-        DatabaseManager dbmanager = new DatabaseManager();
         try {
-            dbmanager.insert(pa);
+            dbm.insert(pa);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(frmNewPatient.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
