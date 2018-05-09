@@ -1,8 +1,11 @@
 
 package com.mlk.views;
 
+import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.Toolkit;
 import java.beans.PropertyVetoException;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
@@ -10,7 +13,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
 public class frmMain extends javax.swing.JFrame {
-
+    String img_background;
     public frmMain() {
         initComponents();
         this.setExtendedState(JFrame.MAXIMIZED_BOTH); 
@@ -50,10 +53,18 @@ public class frmMain extends javax.swing.JFrame {
         jocHyperlink21 = new com.xzq.osc.JocHyperlink();
         jocHyperlink24 = new com.xzq.osc.JocHyperlink();
         jocHyperlink22 = new com.xzq.osc.JocHyperlink();
+        jocHyperlink25 = new com.xzq.osc.JocHyperlink();
         jocHyperlink20 = new com.xzq.osc.JocHyperlink();
         jocHyperlink19 = new com.xzq.osc.JocHyperlink();
         jPanel2 = new javax.swing.JPanel();
-        DeskTopControl = new javax.swing.JDesktopPane();
+        img_background = "";
+        ImageIcon icon = new ImageIcon(getClass().getResource(img_background));
+        final Image img = icon.getImage();
+        DeskTopControl = new javax.swing.JDesktopPane(){
+            public void paintComponent(Graphics g){
+                g.drawImage(img, 0, 0, getWidth(), getHeight(), this);
+            }
+        };
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
 
@@ -217,13 +228,19 @@ public class frmMain extends javax.swing.JFrame {
         jocHyperlink22.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup6.getContentPane().add(jocHyperlink22);
 
+        jocHyperlink25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/flag_icon2.png"))); // NOI18N
+        jocHyperlink25.setText("ສັນຊາດ");
+        jocHyperlink25.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
+        jocHyperlink25.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jTaskPaneGroup6.getContentPane().add(jocHyperlink25);
+
         jocHyperlink20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/regional-integration.png"))); // NOI18N
         jocHyperlink20.setText("ແຂວງ");
         jocHyperlink20.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
         jocHyperlink20.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jTaskPaneGroup6.getContentPane().add(jocHyperlink20);
 
-        jocHyperlink19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/regional-integration.png"))); // NOI18N
+        jocHyperlink19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/District.png"))); // NOI18N
         jocHyperlink19.setText("ເມືອງ");
         jocHyperlink19.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
         jocHyperlink19.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -242,6 +259,8 @@ public class frmMain extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 153, 255), 3));
         jPanel2.setLayout(new java.awt.BorderLayout());
 
+        DeskTopControl.setBackground(java.awt.SystemColor.control);
+
         javax.swing.GroupLayout DeskTopControlLayout = new javax.swing.GroupLayout(DeskTopControl);
         DeskTopControl.setLayout(DeskTopControlLayout);
         DeskTopControlLayout.setHorizontalGroup(
@@ -250,7 +269,7 @@ public class frmMain extends javax.swing.JFrame {
         );
         DeskTopControlLayout.setVerticalGroup(
             DeskTopControlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 594, Short.MAX_VALUE)
+            .addGap(0, 674, Short.MAX_VALUE)
         );
 
         jPanel2.add(DeskTopControl, java.awt.BorderLayout.CENTER);
@@ -351,6 +370,7 @@ public class frmMain extends javax.swing.JFrame {
     private com.xzq.osc.JocHyperlink jocHyperlink22;
     private com.xzq.osc.JocHyperlink jocHyperlink23;
     private com.xzq.osc.JocHyperlink jocHyperlink24;
+    private com.xzq.osc.JocHyperlink jocHyperlink25;
     private com.xzq.osc.JocHyperlink jocHyperlink4;
     private com.xzq.osc.JocHyperlink jocHyperlink5;
     private com.xzq.osc.JocHyperlink jocHyperlink6;
