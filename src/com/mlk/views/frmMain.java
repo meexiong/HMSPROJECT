@@ -48,7 +48,7 @@ public class frmMain extends javax.swing.JFrame {
         jocHyperlink12 = new com.xzq.osc.JocHyperlink();
         jTaskPaneGroup2 = new com.l2fprod.common.swing.JTaskPaneGroup();
         btnSMDoctorList = new com.xzq.osc.JocHyperlink();
-        jocHyperlink6 = new com.xzq.osc.JocHyperlink();
+        btnSMPosition = new com.xzq.osc.JocHyperlink();
         jTaskPaneGroup6 = new com.l2fprod.common.swing.JTaskPaneGroup();
         jocHyperlink21 = new com.xzq.osc.JocHyperlink();
         jocHyperlink24 = new com.xzq.osc.JocHyperlink();
@@ -202,11 +202,16 @@ public class frmMain extends javax.swing.JFrame {
         });
         jTaskPaneGroup2.getContentPane().add(btnSMDoctorList);
 
-        jocHyperlink6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/p-1000x750.png"))); // NOI18N
-        jocHyperlink6.setText("ຕຳແໜ່ງ");
-        jocHyperlink6.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jocHyperlink6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jTaskPaneGroup2.getContentPane().add(jocHyperlink6);
+        btnSMPosition.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/p-1000x750.png"))); // NOI18N
+        btnSMPosition.setText("ຕຳແໜ່ງ");
+        btnSMPosition.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
+        btnSMPosition.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnSMPosition.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSMPositionActionPerformed(evt);
+            }
+        });
+        jTaskPaneGroup2.getContentPane().add(btnSMPosition);
 
         jTaskPane1.add(jTaskPaneGroup2);
 
@@ -317,6 +322,12 @@ public class frmMain extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnSMDoctorListActionPerformed
 
+    private void btnSMPositionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSMPositionActionPerformed
+        FrmPosition frmPosition = new FrmPosition();
+        DeskTopControl.add(frmPosition);
+        frmPosition.setVisible(true);       
+    }//GEN-LAST:event_btnSMPositionActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -359,6 +370,7 @@ public class frmMain extends javax.swing.JFrame {
     private javax.swing.JDesktopPane DeskTopControl;
     private com.xzq.osc.JocHyperlink btnSMDoctorList;
     private com.xzq.osc.JocHyperlink btnSMPatientList;
+    private com.xzq.osc.JocHyperlink btnSMPosition;
     private com.xzq.osc.JocHyperlink btnSMRegister;
     private com.xzq.osc.JocHyperlink btnSMRtpPatient;
     private javax.swing.JMenu jMenu1;
@@ -388,7 +400,6 @@ public class frmMain extends javax.swing.JFrame {
     private com.xzq.osc.JocHyperlink jocHyperlink23;
     private com.xzq.osc.JocHyperlink jocHyperlink24;
     private com.xzq.osc.JocHyperlink jocHyperlink25;
-    private com.xzq.osc.JocHyperlink jocHyperlink6;
     private com.xzq.osc.JocHyperlink jocHyperlink8;
     private com.xzq.osc.JocHyperlink jocHyperlink9;
     // End of variables declaration//GEN-END:variables

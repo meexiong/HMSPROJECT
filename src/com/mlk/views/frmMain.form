@@ -775,7 +775,7 @@
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSMDoctorListActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="com.xzq.osc.JocHyperlink" name="jocHyperlink6">
+                        <Component class="com.xzq.osc.JocHyperlink" name="btnSMPosition">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                               <Image iconType="3" name="/com/mlk/icons/p-1000x750.png"/>
@@ -786,6 +786,9 @@
                             </Property>
                             <Property name="horizontalAlignment" type="int" value="2"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSMPositionActionPerformed"/>
+                          </Events>
                         </Component>
                       </SubComponents>
                       <LayoutCode>
@@ -873,11 +876,11 @@
                             <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
                           </StatementProvider>
                           <Parameters>
-                            <CodeExpression id="40_jocHyperlink6">
-                              <CodeVariable name="jocHyperlink6" type="8194" declaredType="com.xzq.osc.JocHyperlink"/>
+                            <CodeExpression id="40_btnSMPosition">
+                              <CodeVariable name="btnSMPosition" type="8194" declaredType="com.xzq.osc.JocHyperlink"/>
                               <ExpressionOrigin>
                                 <ExpressionProvider type="ComponentRef">
-                                  <ComponentRef name="jocHyperlink6"/>
+                                  <ComponentRef name="btnSMPosition"/>
                                 </ExpressionProvider>
                               </ExpressionOrigin>
                             </CodeExpression>
