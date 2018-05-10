@@ -55,16 +55,15 @@ public class frmNewPatient extends javax.swing.JDialog {
         txtNumber = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        cmbOccupation = new javax.swing.JComboBox<String>();
+        cmbOccupation = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
         txtVillage = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        cmbDistrict = new javax.swing.JComboBox<String>();
+        cmbDistrict = new javax.swing.JComboBox<>();
         jLabel11 = new javax.swing.JLabel();
-        cmbProvince = new javax.swing.JComboBox<String>();
+        cmbProvince = new javax.swing.JComboBox<>();
         jLabel12 = new javax.swing.JLabel();
-        cmbNationality = new javax.swing.JComboBox<String>();
-        jPanel4 = new javax.swing.JPanel();
+        cmbNationality = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("New Patient");
@@ -152,7 +151,7 @@ public class frmNewPatient extends javax.swing.JDialog {
         jLabel8.setText("ອາຊີບ");
 
         cmbOccupation.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        cmbOccupation.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Farmer", "Student", "Officer" }));
+        cmbOccupation.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Farmer", "Student", "Officer" }));
 
         jLabel9.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel9.setText("ບ້ານຢູ່ປັດຈຸບັນ");
@@ -168,32 +167,19 @@ public class frmNewPatient extends javax.swing.JDialog {
         jLabel10.setText("ເມືອງ");
 
         cmbDistrict.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        cmbDistrict.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Xaysomboun", "Thathom", "Hom", "Longxarn" }));
+        cmbDistrict.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Xaysomboun", "Thathom", "Hom", "Longxarn" }));
 
         jLabel11.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel11.setText("ແຂວງ");
 
         cmbProvince.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        cmbProvince.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Xaysomboun", "Bolikhamxay", "Vientiane", "Xiengkhoang" }));
+        cmbProvince.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Xaysomboun", "Bolikhamxay", "Vientiane", "Xiengkhoang" }));
 
         jLabel12.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel12.setText("ສັນຊາດ");
 
         cmbNationality.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        cmbNationality.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Lao", "Thai", "Chinese", "Vietian", "American" }));
-
-        jPanel4.setBackground(new java.awt.Color(102, 153, 255));
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 28, Short.MAX_VALUE)
-        );
+        cmbNationality.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lao", "Thai", "Chinese", "Vietian", "American" }));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -238,7 +224,6 @@ public class frmNewPatient extends javax.swing.JDialog {
                             .addComponent(datePKDOB, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(124, 124, 124))
-            .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel3Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jLabel1, jLabel10, jLabel11, jLabel12, jLabel2, jLabel3, jLabel4, jLabel5, jLabel6, jLabel7, jLabel8, jLabel9});
@@ -299,8 +284,7 @@ public class frmNewPatient extends javax.swing.JDialog {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel12)
                     .addComponent(cmbNationality, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         jPanel3Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {cmbOccupation, datePKDOB, jLabel1, jLabel10, jLabel2, jLabel3, jLabel4, jLabel5, jLabel6, jLabel7, jLabel8, jLabel9, radFemale, radMale, txtCode, txtName, txtNumber, txtSurname, txtTel, txtVillage});
@@ -326,8 +310,8 @@ public class frmNewPatient extends javax.swing.JDialog {
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10))
         );
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
@@ -456,7 +440,6 @@ public class frmNewPatient extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JRadioButton radFemale;
     private javax.swing.JRadioButton radMale;
     private javax.swing.JTextField txtCode;
