@@ -47,7 +47,7 @@ public class frmMain extends javax.swing.JFrame {
         jocHyperlink11 = new com.xzq.osc.JocHyperlink();
         jocHyperlink12 = new com.xzq.osc.JocHyperlink();
         jTaskPaneGroup2 = new com.l2fprod.common.swing.JTaskPaneGroup();
-        jocHyperlink5 = new com.xzq.osc.JocHyperlink();
+        btnSMDoctorList = new com.xzq.osc.JocHyperlink();
         jocHyperlink6 = new com.xzq.osc.JocHyperlink();
         jTaskPaneGroup6 = new com.l2fprod.common.swing.JTaskPaneGroup();
         jocHyperlink21 = new com.xzq.osc.JocHyperlink();
@@ -188,15 +188,19 @@ public class frmMain extends javax.swing.JFrame {
 
         jTaskPane1.add(jTaskPaneGroup4);
 
-        jTaskPaneGroup2.setExpanded(false);
         jTaskPaneGroup2.setTitle("ຂໍ້ມູນທ່ານໝໍ");
         jTaskPaneGroup2.setFont(new java.awt.Font("Saysettha OT", 1, 14)); // NOI18N
 
-        jocHyperlink5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/doctor.png"))); // NOI18N
-        jocHyperlink5.setText("ເພີ່ມທ່ານໝໍ");
-        jocHyperlink5.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jocHyperlink5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jTaskPaneGroup2.getContentPane().add(jocHyperlink5);
+        btnSMDoctorList.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/doctor.png"))); // NOI18N
+        btnSMDoctorList.setText("ເພີ່ມທ່ານໝໍ");
+        btnSMDoctorList.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
+        btnSMDoctorList.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnSMDoctorList.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSMDoctorListActionPerformed(evt);
+            }
+        });
+        jTaskPaneGroup2.getContentPane().add(btnSMDoctorList);
 
         jocHyperlink6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/p-1000x750.png"))); // NOI18N
         jocHyperlink6.setText("ຕຳແໜ່ງ");
@@ -302,6 +306,17 @@ public class frmMain extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSMRegisterActionPerformed
 
+    private void btnSMDoctorListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSMDoctorListActionPerformed
+        FrmDoctorList frmDoctorList = new FrmDoctorList();
+        DeskTopControl.add(frmDoctorList);
+        frmDoctorList.setVisible(true);
+        try {
+          frmDoctorList.setMaximum(true);
+        } catch (PropertyVetoException e) {
+            JOptionPane.showConfirmDialog(null,"Can not be maximized!");
+        }
+    }//GEN-LAST:event_btnSMDoctorListActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -342,6 +357,7 @@ public class frmMain extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane DeskTopControl;
+    private com.xzq.osc.JocHyperlink btnSMDoctorList;
     private com.xzq.osc.JocHyperlink btnSMPatientList;
     private com.xzq.osc.JocHyperlink btnSMRegister;
     private com.xzq.osc.JocHyperlink btnSMRtpPatient;
@@ -372,7 +388,6 @@ public class frmMain extends javax.swing.JFrame {
     private com.xzq.osc.JocHyperlink jocHyperlink23;
     private com.xzq.osc.JocHyperlink jocHyperlink24;
     private com.xzq.osc.JocHyperlink jocHyperlink25;
-    private com.xzq.osc.JocHyperlink jocHyperlink5;
     private com.xzq.osc.JocHyperlink jocHyperlink6;
     private com.xzq.osc.JocHyperlink jocHyperlink8;
     private com.xzq.osc.JocHyperlink jocHyperlink9;

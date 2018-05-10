@@ -17,7 +17,7 @@ public class frmPatientList extends javax.swing.JInternalFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         btnNew = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnRefresh = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
@@ -39,8 +39,8 @@ public class frmPatientList extends javax.swing.JInternalFrame {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
-        jButton2.setText("ໂຫຼດຂໍ້ມູນມາໃໝ່");
+        btnRefresh.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
+        btnRefresh.setText("ໂຫຼດຂໍ້ມູນມາໃໝ່");
 
         jLabel1.setFont(new java.awt.Font("Saysettha OT", 0, 12)); // NOI18N
         jLabel1.setText("ຄົ້ນຫາຕາມລະຫັດ,ຊື່,ເບີໂທ,ເລກບັດ");
@@ -54,7 +54,7 @@ public class frmPatientList extends javax.swing.JInternalFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(btnNew)
                 .addGap(0, 0, 0)
-                .addComponent(jButton2)
+                .addComponent(btnRefresh)
                 .addGap(89, 89, 89)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -65,7 +65,7 @@ public class frmPatientList extends javax.swing.JInternalFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(btnNew)
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(jButton2)
+                .addComponent(btnRefresh)
                 .addComponent(jLabel1)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -160,11 +160,10 @@ public class frmPatientList extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnNew;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnRefresh;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
