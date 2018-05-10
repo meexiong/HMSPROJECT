@@ -50,12 +50,12 @@ public class frmMain extends javax.swing.JFrame {
         btnSMDoctorList = new com.xzq.osc.JocHyperlink();
         btnSMPosition = new com.xzq.osc.JocHyperlink();
         jTaskPaneGroup6 = new com.l2fprod.common.swing.JTaskPaneGroup();
-        jocHyperlink21 = new com.xzq.osc.JocHyperlink();
-        jocHyperlink24 = new com.xzq.osc.JocHyperlink();
-        jocHyperlink22 = new com.xzq.osc.JocHyperlink();
-        jocHyperlink25 = new com.xzq.osc.JocHyperlink();
-        jocHyperlink20 = new com.xzq.osc.JocHyperlink();
-        jocHyperlink19 = new com.xzq.osc.JocHyperlink();
+        btnSMHospitalInfo = new com.xzq.osc.JocHyperlink();
+        btnSMRoomInfo = new com.xzq.osc.JocHyperlink();
+        btnBedInfo = new com.xzq.osc.JocHyperlink();
+        btnSMNationalityInfo = new com.xzq.osc.JocHyperlink();
+        btnSMProvinceInfo = new com.xzq.osc.JocHyperlink();
+        btnSMDisttrictInfo = new com.xzq.osc.JocHyperlink();
         jPanel2 = new javax.swing.JPanel();
         img_background = "";
         ImageIcon icon = new ImageIcon(getClass().getResource(img_background));
@@ -215,45 +215,49 @@ public class frmMain extends javax.swing.JFrame {
 
         jTaskPane1.add(jTaskPaneGroup2);
 
-        jTaskPaneGroup6.setExpanded(false);
         jTaskPaneGroup6.setTitle("ຕັ້ງຄ່າລະບົບ");
         jTaskPaneGroup6.setFont(new java.awt.Font("Saysettha OT", 1, 14)); // NOI18N
 
-        jocHyperlink21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/Hospital-blue-icon.png"))); // NOI18N
-        jocHyperlink21.setText("ຂໍມູນໂຮງໝໍ");
-        jocHyperlink21.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jocHyperlink21.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jTaskPaneGroup6.getContentPane().add(jocHyperlink21);
+        btnSMHospitalInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/Hospital-blue-icon.png"))); // NOI18N
+        btnSMHospitalInfo.setText("ຂໍ້ໍມູນໂຮງໝໍ");
+        btnSMHospitalInfo.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
+        btnSMHospitalInfo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnSMHospitalInfo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSMHospitalInfoActionPerformed(evt);
+            }
+        });
+        jTaskPaneGroup6.getContentPane().add(btnSMHospitalInfo);
 
-        jocHyperlink24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/425_-_Door-512.png"))); // NOI18N
-        jocHyperlink24.setText("ຫ້ອງນອນ");
-        jocHyperlink24.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jocHyperlink24.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jTaskPaneGroup6.getContentPane().add(jocHyperlink24);
+        btnSMRoomInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/425_-_Door-512.png"))); // NOI18N
+        btnSMRoomInfo.setText("ຫ້ອງນອນ");
+        btnSMRoomInfo.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
+        btnSMRoomInfo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jTaskPaneGroup6.getContentPane().add(btnSMRoomInfo);
 
-        jocHyperlink22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/Icon_inpatient.png"))); // NOI18N
-        jocHyperlink22.setText("ຂໍ້ມຕຽງນອນ");
-        jocHyperlink22.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jocHyperlink22.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jTaskPaneGroup6.getContentPane().add(jocHyperlink22);
+        btnBedInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/Icon_inpatient.png"))); // NOI18N
+        btnBedInfo.setText("ຂໍ້ມູນຕຽງນອນ");
+        btnBedInfo.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
+        btnBedInfo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jTaskPaneGroup6.getContentPane().add(btnBedInfo);
 
-        jocHyperlink25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/flag_icon2.png"))); // NOI18N
-        jocHyperlink25.setText("ສັນຊາດ");
-        jocHyperlink25.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jocHyperlink25.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jTaskPaneGroup6.getContentPane().add(jocHyperlink25);
+        btnSMNationalityInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/flag_icon2.png"))); // NOI18N
+        btnSMNationalityInfo.setText("ສັນຊາດ");
+        btnSMNationalityInfo.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
+        btnSMNationalityInfo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jTaskPaneGroup6.getContentPane().add(btnSMNationalityInfo);
 
-        jocHyperlink20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/regional-integration.png"))); // NOI18N
-        jocHyperlink20.setText("ແຂວງ");
-        jocHyperlink20.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jocHyperlink20.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jTaskPaneGroup6.getContentPane().add(jocHyperlink20);
+        btnSMProvinceInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/regional-integration.png"))); // NOI18N
+        btnSMProvinceInfo.setText("ແຂວງ");
+        btnSMProvinceInfo.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
+        btnSMProvinceInfo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jTaskPaneGroup6.getContentPane().add(btnSMProvinceInfo);
 
-        jocHyperlink19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/District.png"))); // NOI18N
-        jocHyperlink19.setText("ເມືອງ");
-        jocHyperlink19.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
-        jocHyperlink19.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jTaskPaneGroup6.getContentPane().add(jocHyperlink19);
+        btnSMDisttrictInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mlk/icons/District.png"))); // NOI18N
+        btnSMDisttrictInfo.setText("ເມືອງ");
+        btnSMDisttrictInfo.setFont(new java.awt.Font("Saysettha OT", 0, 14)); // NOI18N
+        btnSMDisttrictInfo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jTaskPaneGroup6.getContentPane().add(btnSMDisttrictInfo);
 
         jTaskPane1.add(jTaskPaneGroup6);
 
@@ -278,7 +282,7 @@ public class frmMain extends javax.swing.JFrame {
         );
         DeskTopControlLayout.setVerticalGroup(
             DeskTopControlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 674, Short.MAX_VALUE)
+            .addGap(0, 754, Short.MAX_VALUE)
         );
 
         jPanel2.add(DeskTopControl, java.awt.BorderLayout.CENTER);
@@ -328,6 +332,12 @@ public class frmMain extends javax.swing.JFrame {
         frmPosition.setVisible(true);       
     }//GEN-LAST:event_btnSMPositionActionPerformed
 
+    private void btnSMHospitalInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSMHospitalInfoActionPerformed
+        FrmHospital frmHospitalInfo = new FrmHospital();
+        DeskTopControl.add(frmHospitalInfo);
+        frmHospitalInfo.setVisible(true); 
+    }//GEN-LAST:event_btnSMHospitalInfoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -368,10 +378,16 @@ public class frmMain extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane DeskTopControl;
+    private com.xzq.osc.JocHyperlink btnBedInfo;
+    private com.xzq.osc.JocHyperlink btnSMDisttrictInfo;
     private com.xzq.osc.JocHyperlink btnSMDoctorList;
+    private com.xzq.osc.JocHyperlink btnSMHospitalInfo;
+    private com.xzq.osc.JocHyperlink btnSMNationalityInfo;
     private com.xzq.osc.JocHyperlink btnSMPatientList;
     private com.xzq.osc.JocHyperlink btnSMPosition;
+    private com.xzq.osc.JocHyperlink btnSMProvinceInfo;
     private com.xzq.osc.JocHyperlink btnSMRegister;
+    private com.xzq.osc.JocHyperlink btnSMRoomInfo;
     private com.xzq.osc.JocHyperlink btnSMRtpPatient;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
@@ -393,13 +409,7 @@ public class frmMain extends javax.swing.JFrame {
     private com.xzq.osc.JocHyperlink jocHyperlink16;
     private com.xzq.osc.JocHyperlink jocHyperlink17;
     private com.xzq.osc.JocHyperlink jocHyperlink18;
-    private com.xzq.osc.JocHyperlink jocHyperlink19;
-    private com.xzq.osc.JocHyperlink jocHyperlink20;
-    private com.xzq.osc.JocHyperlink jocHyperlink21;
-    private com.xzq.osc.JocHyperlink jocHyperlink22;
     private com.xzq.osc.JocHyperlink jocHyperlink23;
-    private com.xzq.osc.JocHyperlink jocHyperlink24;
-    private com.xzq.osc.JocHyperlink jocHyperlink25;
     private com.xzq.osc.JocHyperlink jocHyperlink8;
     private com.xzq.osc.JocHyperlink jocHyperlink9;
     // End of variables declaration//GEN-END:variables
