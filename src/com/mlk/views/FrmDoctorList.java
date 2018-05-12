@@ -163,7 +163,7 @@ public class FrmDoctorList extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewActionPerformed
-        frmNewDoctor newDoctorObject = new frmNewDoctor(null, closable);
+        FrmNewDoctor newDoctorObject = new FrmNewDoctor(null, closable);
         newDoctorObject.setVisible(true);
     }//GEN-LAST:event_btnNewActionPerformed
 
