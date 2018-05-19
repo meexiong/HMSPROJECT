@@ -14,9 +14,9 @@ import java.util.Date;
 
 public class DatabaseManager {
 
-    String db_connect_string = "jdbc:sqlserver://PXN-ESD213-002-:1433;databaseName=hmsdb;selectMethod=cursor";
+    String db_connect_string = "jdbc:sqlserver://KOR-PC:1433;databaseName=hmsdb;selectMethod=cursor";
     String db_userid = "sa";
-    String db_password = "Leelar@2017";
+    String db_password = "kor";
     Connection conn = null;
 
     public DatabaseManager() {
